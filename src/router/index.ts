@@ -7,14 +7,17 @@ import { createRouter, createWebHistory } from 'vue-router'
      routes: [
          {
              path: '/',
+             name: 'feed',
              component: Feed
          },
          {
              path: '/feed',
+             name: 'feed',
              component: Feed
          },
           {
               path: '/users',
+              name: 'users',
               component: Users
           }
      ]

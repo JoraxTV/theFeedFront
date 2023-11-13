@@ -1,9 +1,14 @@
+<script setup lang="ts">
+    import {useRouter} from 'vue-router';
+    const router = useRouter();
+</script>
+
 <template>
   <div id="wrapper">
     <header>
-      <h1 >The feed</h1>
+      <h1 @click="router.push('/feed')">The feed</h1>
       <nav>
-        <div >Les membres</div>
+        <div @click="router.push('Users')">Les membres</div>
         <div >S'inscrire</div>
         <div >Se connecter</div>
       </nav>
